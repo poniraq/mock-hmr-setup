@@ -1,0 +1,29 @@
+{
+  "name": "mock-hmr-setup",
+  "version": "1.0.0",
+  "description": "Mock server hot-reload setup",
+  "main": "index.js",
+  "scripts": {
+    "start": "rm -rf .build && node compiler"
+  },
+  "keywords": [],
+  "homepage": "https://github.com/poniraq/mock-hmr-setup",
+  "repository": "github:poniraq/mock-hmr-setup",
+  "author": {
+    "name": "poniraq",
+    "email": "poniraq@gmail.com"
+  },
+  "license": "WTFPL",
+  "dependencies": {
+    "@types/node": "^10.1.2",
+    "fork-ts-checker-webpack-plugin": "^0.4.1",
+    "jojo-mock": "^1.0.5",
+    "start-server-webpack-plugin": "^2.2.5",
+    "ts-loader": "^4.3.0",
+    "typescript": "^2.8.3",
+    "webpack": "^4.9.1",
+    "webpack-cli": "^2.1.4",
+    "webpack-node-externals": "^1.7.2",
+    "webpack-serve": "^1.0.2"
+  }
+}
