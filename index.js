@@ -7,6 +7,7 @@ let server = new Server(app)
 server.start(config)
 
 if (module.hot) {
+    module.hot.decline()
 
     module.hot.accept(['./server/config'], () => {
         try {

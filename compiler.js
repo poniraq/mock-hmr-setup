@@ -10,7 +10,6 @@ const watcher = compiler.watch({
     ],
     poll: false
 }, (err, stats) => {
-    console.log('\n')
     if (err) {
         console.error(err.stack || err)
         if (err.details) {
@@ -24,14 +23,4 @@ const watcher = compiler.watch({
     if (stats.hasErrors()) {
         console.error(info.errors)
     }
-
-    console.log(stats.toString({
-        chunks: false,
-        assets: false,
-        modules: false,
-        warnings: false,
-        errors: false,
-        colors: true    // Shows colors in the console
-    }))
-    console.log('\n')
 })

@@ -4,7 +4,7 @@ const api = require('./api')
 const rootDir = process.cwd()
 const srcDir = path.join(rootDir, 'src')
 
-module.exports = {
+const config = {
     api: {
         path: '/',
         routers: [
@@ -33,3 +33,5 @@ module.exports = {
         dir: srcDir
     }]
 }
+
+module.exports = config
